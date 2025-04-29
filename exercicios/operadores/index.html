@@ -5,7 +5,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    h2{
+        text-align: center;
+    }
+    li{
+        padding: 1 px ;
+        
+    }
+    u{
+        box-shadow: 1 px 1px black;
+    }
+</style>
 <body>
+    <h1>Aritméticos</h1>
+    <p>irá tratar de + - / *(** raiz quadrada) se adicionarmos parenteses em alguma conta de uma expressão numerica ela será resolvida primeiro</p>
+   <p>Temos que ter muita atenção também na ordem de precedência, toda expressão entre (parentese) será analisada primeiro logo depois as potencias, depois * / % e por ultimo adição e subtração </p>
+                                             <h2>Artribuição</h2>
+    <p>Aqui vemos a capacidade incrivel de conseguir casar informações e resolver problemas do node JS, isso pode ser feito atraves do entendimento das ordens de precendencias </p>
+   <ul>
+       <li>> var a = 5+ 3</li>
+       undefined
+       <li>> var b = a % 5</li>
+       undefined
+       <li>> var c = 5 * b ** 2</li>
+       undefined
+       <li>> var d = 10 - a / 2</li>
+       undefined
+       <li>> var e = 6 * 2 / d</li>
+       undefined
+       <li>> var f = b%e + 4/e</li>
+   </ul>
+                                         <h2>Auto-Atribuições </h2>
+   <p>
+       Muito importante também  são as auto-atribuições que é quando a variavel é substituida pelo resultado resolvido após o recebe
+       exemplo
+   </p>
+   Var n = 3
+   n = n + 4 = 7 o valor de n que no exemplo é 3 e somado com o 4 depois do (=) recebe que logo resulta 7 
+   ainda melhor podemos simplificar essas auto-atribuições como por exemplo 
+   n+=4
+   segue mais exemplos 
+   >  var num = 8
+   undefined
+   > num
+   8
+           
     
+   > num += 2
+   10
+   > num %=2
+   0
+   
+   
+                                     Incremento
+   
+   Outros operadores bastante usandos são operadores de incremento 
+   var x = 5
+   x = x + 1 = 6 abrr x+=1 
+   x = x -1 = 4 abbr x-=1
+   observando essas abreviações podemos ainda simplicar mais ainda  usando 
+   x++
+   x--
+   
+    Pré incremento 
+   --n 
+   ++n
+   Pós incremento
+   n--
+   n++
+                       
+                     Relacionas 
+   > maior que 
+   <menor que 
+   >= maior ou igual
+   <= menor ou igual
+   = = (em JS 2 simbolos de igual que quer dizer igual pq um apenas é recebe) 
+   !=  diferente de 
+   
+   Segue alguns exemplos 
+   > 5 > 2
+   true
+   >  8 < 4 
+   false
+   > var a = 8 
+   undefined
+   > var b =  15 
+   undefined
+   >  a > b
+   false
+   > a < b 
+   true
+   
+   > a <= b - 10
+   false
+   >Repare que na linha tem 2 operadores e que primeiro foi acionado o aritmetico e so depois os relacionais 
+   
+                     Identidade(identico)
+   Quando olhamos os seguintes valores 
+   > 5 ==5
+   true
+   > 5 =='5'
+   true 
+   percebemos que a linguagem aceita os valores como verdadeiros, mas não identicos 
+   para que um valor possa se confirmar indenteico a outra usaremos (===) 3 iguais 
+   >  5 ==="5"
+   false
+   >  5 === 5
+   true
+              Lógicos
+   !  negação
+   &&  conjunção êlogico aifirmação
+   ||  disjunção   oulogico parciliadade 
+   
+   
+   ex
+   &&  conjunção êlogico aifirmação
+   o &&  como é um operador binario eles tem 2 operadores lógicos
+   para que ele seja êlogico os 2 precisam ser verdadeiros 
+   > true && false
+   false 
+   > true && true
+   true
+   >
+   Assim como no && o  || tem 2 operadores logicos, mas diferente do && o || não necessita que os 2 sejam verdedeiros para que ele aceite como verdadeiro, basta que um seja. como no exemplo 
+    true || false
+   true
+   true || true
+   true
+   > var a = 5 
+   undefined
+   > var b = 8 
+   undefined
+   > true  && false 
+   false
+   >  true && true
+   true
+   >  false || false
+   false
+   > true || false 
+   true
+   > true||true 
+   true
+   >  a > b  && b % 2 == 0
+   false
+    aqui podemos ver uma linha com muitos operadores, a sua ordem de execução é primeiro sempre sera resolvido os operadores logicos logo após os relacionais e por ultimo os logicos.
+   
+   
+   a <=b || b / 2 == 2 
+   true
+   nesta outra lnha   é aceito como verdeiro porque usamos o operador oulogico que aceita apenas ums do valores binarios como verdadeiros 
+    
+   Quando tiver ! ela sempre sera resolvida primeira, depois o ê depois o ou 
+   
 </body>
 </html>
