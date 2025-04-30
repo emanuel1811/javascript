@@ -1,0 +1,17 @@
+@charset "UTF-8";
+*{
+    margin: 0 px;
+    padding: 0px;
+}
+ body{
+    min-height: 100vh;
+ }
+ header{
+    box-shadow: inset 6px 6px 13px 0px rgb(0, 0, 0);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.548),yellow);
+ }
+ h1{
+    text-align: center;
+    color: white;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.375);
+ }
